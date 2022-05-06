@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class C04_universityMain {
+public class C03_universityMain {
     public static void main(String[] args) {
         University unv1 = new University("Cambridge", "Computer Engineering", 256, 52);
         University unv2 = new University("Harvard", "Maths", 322, 77);
@@ -47,7 +47,7 @@ public class C04_universityMain {
         uniList.
                 stream().
                 filter(t -> t.getGradePointAverage() > 74).
-                forEach(C04_universityMain::print);
+                forEach(C03_universityMain::print);
     }
 
 
@@ -57,7 +57,7 @@ public class C04_universityMain {
         uniList.
                 stream().
                 filter(t -> t.getPopulation() > 110).
-                forEach(C04_universityMain::print);
+                forEach(C03_universityMain::print);
     }
 
 
@@ -67,7 +67,7 @@ public class C04_universityMain {
         uniList.
                 stream().
                 filter(t -> t.getDepartment().equalsIgnoreCase("Maths")).
-                forEach(C04_universityMain::print);
+                forEach(C03_universityMain::print);
     }
 
 
@@ -77,7 +77,7 @@ public class C04_universityMain {
         uniList.
                 stream().
                 sorted(Comparator.comparingInt(University::getPopulation).reversed()).
-                forEach(C04_universityMain::print);
+                forEach(C03_universityMain::print);
 
     }
 
@@ -89,7 +89,7 @@ public class C04_universityMain {
                 stream().
                 sorted(Comparator.comparingInt(University::getGradePointAverage)).
                 skip(2).sorted(Comparator.comparingInt(University::getGradePointAverage).reversed()).
-                forEach(C04_universityMain::print);
+                forEach(C03_universityMain::print);
 
     }
 
