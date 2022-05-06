@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class C05_givenFileManipulation {
+public class C05_textFileManipulation {
 
     public static void main(String[] args) throws IOException {
 
