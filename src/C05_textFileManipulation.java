@@ -46,8 +46,8 @@ public class C05_textFileManipulation {
                 count());  //fails if a word includes the word in itself. (Example: tender)
         // 2nd method
         System.out.println(Files.lines(fileText).
-                map(t -> t.toLowerCase().split(" ")).
-                flatMap(Arrays::stream).
+                map(t -> t.toLowerCase().split(" ")). // all lines added to a 2D array
+                flatMap(Arrays::stream). // 2D array converted to 1D array to stream all words one by one
                 filter(t -> t.equals("end")).
                 count());
 
